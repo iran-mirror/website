@@ -1,0 +1,12 @@
+node_modules
+public
+resources
+.hugo_build.lock
+.netlify
+.env
+.git
+.gitignore
+Dockerfile
+.dockerignore
+npm-debug.log*
+.DS_Store

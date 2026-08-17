@@ -1,0 +1,23 @@
+name: Pipeline CI/CD
+run-name: ${{ github.actor }} run Actions 🚀
+
+on:
+  - push
+
+jobs:
+  docker:
+    uses: iran-mirror/gh-actions/.github/workflows/docker.yaml@v1.3
+    with:
+      debug: false
+      registry: ${{ vars.REGISTERY_ADDRESS }}
+    secrets:
+      REGISTERY_USER: ${{ secrets.REGISTERY_USER }}
+      REGISTERY_PASSWORD: ${{ secrets.REGISTERY_PASSWORD }}
+  argocd:
+    uses: iran-mirror/gh-actions/.github/workflows/argocd.yaml@v1.3
+    needs: docker
+    with:
+      debug: false
+      registry: ${{ vars.REGISTERY_ADDRESS }}
+    secrets:
+      ARGOCD_GIT_TOKEN: ${{ secrets.ARGOCD_GIT_TOKEN }}
