@@ -11,8 +11,8 @@ jobs:
       debug: true
       registry: ${{ vars.REGISTERY_ADDRESS }}
     secrets:
-      REGISTERY_USER: ${{ secrets.REGISTERY_USER }}
-      REGISTERY_PASSWORD: ${{ secrets.REGISTERY_PASSWORD }}
+      REGISTERY_USER: ${{ github.actor }}
+      REGISTERY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
   argocd:
     uses: iran-mirror/gh-actions/.github/workflows/argocd.yaml@main
     needs: docker
