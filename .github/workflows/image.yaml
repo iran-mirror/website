@@ -1,6 +1,5 @@
 name: Pipeline CI/CD
 run-name: ${{ github.actor }} run Actions 🚀
-
 on:
   - push
 
