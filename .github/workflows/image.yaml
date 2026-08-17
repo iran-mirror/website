@@ -4,6 +4,10 @@ on:
   - push
   - workflow_dispatch
 
+permissions:
+  packages: write
+  contents: read
+
 jobs:
   docker:
     uses: iran-mirror/gh-actions/.github/workflows/docker.yaml@main
