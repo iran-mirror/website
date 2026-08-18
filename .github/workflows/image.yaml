@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   docker:
-    uses: iran-mirror/gh-actions/.github/workflows/docker.yaml@v1.6
+    uses: iran-mirror/gh-actions/.github/workflows/docker.yaml@v1.7
     with:
       debug: true
       registry: ${{ vars.REGISTERY_ADDRESS }}
@@ -18,7 +18,7 @@ jobs:
       REGISTERY_USER: ${{ github.actor }}
       REGISTERY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
   argocd:
-    uses: iran-mirror/gh-actions/.github/workflows/argocd.yaml@v1.6
+    uses: iran-mirror/gh-actions/.github/workflows/argocd.yaml@v1.7
     needs: docker
     with:
       debug: true
