@@ -1,0 +1,60 @@
+[404_text]
+other = "صفحه‌ای که به دنبال آن هستید وجود ندارد یا جابه‌جا شده است."
+
+[404_title]
+other = "صفحه پیدا نشد :("
+
+[browse]
+other = "مرور"
+
+[chapter_next]
+other = "بعدی"
+
+[chapter_previous]
+other = "قبلی"
+
+[edit_page]
+other = "ویرایش این صفحه در"
+
+[get_started]
+other = "راهنمای نمونه"
+
+[home]
+other = "خانه"
+
+[in]
+other = "در"
+
+[by]
+other = "توسط"
+
+[last_updated]
+other = "آخرین به‌روزرسانی در"
+
+[minute]
+one = "دقیقه"
+other = "دقیقه"
+
+[on_this_page]
+other = "در این صفحه"
+
+[reading_time]
+other = "زمان تقریبی مطالعه"
+
+[search_loading]
+other = "در حال بارگذاری نمایه جستجو…"
+
+[search_no_recent]
+other = "جستجوی اخیری وجود ندارد"
+
+[search_no_results]
+other = "نتیجه‌ای یافت نشد"
+
+[search_placeholder]
+other = "جستجو"
+
+[search_title]
+other = "جستجو"
+
+[video_unsupported]
+other = "مرورگر شما از ویدیوهای جاسازی‌شده پشتیبانی نمی‌کند، اما نگران نباشید، می‌توانید <a href=\"{{ .RelPermalink }}\">آن را دانلود کنید</a> و با پخش‌کننده ویدیوی مورد علاقه خود تماشا کنید!"

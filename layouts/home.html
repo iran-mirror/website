@@ -6,7 +6,8 @@
     </div>
     <div class="col-lg-9 col-xl-8 text-center">
       <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="/docs/{{ if site.Params.doks.docsVersioning }}{{ site.Params.doks.docsVersion }}/{{ end }}guides/example-guide/" role="button">{{ i18n "get_started" }}</a>
+      {{ $guidePath := printf "docs/%sguides/example-guide/" (cond site.Params.doks.docsVersioning (printf "%s/" site.Params.doks.docsVersion) "") }}
+      <a class="btn btn-primary btn-cta rounded-pill btn-lg my-3" href="{{ $guidePath | relLangURL }}" role="button">{{ i18n "get_started" }}</a>
       {{ .Content }}
     </div>
   </div>
@@ -19,7 +20,27 @@
     <div class="bg-dots"></div>
   </div>
   {{ end -}}
-  {{ if eq $.Site.Language.LanguageName "English" }}
+  {{ $guidePath := "docs/guides/example-guide/" | relLangURL }}
+  {{ if eq $.Site.Language.Lang "fa" }}
+  <section class="section section-md section-features">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-5">
+          <h2 class="h4">آینه‌های کانتینر</h2>
+          <p>docker ,ghcr ,gcr , ... </p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">مخازن سیستم‌عامل</h2>
+          <p>apt ,yum ,apk , ... </p>
+        </div>
+        <div class="col-lg-5">
+          <h2 class="h4">مستندات</h2>
+          <p>برای نحوه استفاده از آینه‌ها، <a href="{{ $guidePath }}">مستندات</a> زیادی موجود است</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ else if eq $.Site.Language.LanguageName "English" }}
   <section class="section section-md section-features">
     <div class="container">
       <div class="row justify-content-center text-center">
@@ -33,7 +54,7 @@
         </div>
         <div class="col-lg-5">
           <h2 class="h4">Documentation</h2>
-          <p>many <a href="/docs/guides/example-guide">documentation</a> for how to use mirrors</p>
+          <p>many <a href="{{ $guidePath }}">documentation</a> for how to use mirrors</p>
         </div>
       </div>
     </div>

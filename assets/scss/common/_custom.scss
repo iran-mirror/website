@@ -1,1 +1,39 @@
 // Put your custom SCSS code here
+
+/* vazirmatn-regular - arabic (covers Persian) */
+@font-face {
+    font-family: Vazirmatn;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src:
+        url("fonts/vendor/vazirmatn/vazirmatn-v16-arabic-regular.woff2")
+            format("woff2");
+}
+
+/* vazirmatn-500 - arabic (covers Persian) */
+@font-face {
+    font-family: Vazirmatn;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src:
+        url("fonts/vendor/vazirmatn/vazirmatn-v16-arabic-500.woff2")
+            format("woff2");
+}
+
+/* vazirmatn-700 - arabic (covers Persian) */
+@font-face {
+    font-family: Vazirmatn;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src:
+        url("fonts/vendor/vazirmatn/vazirmatn-v16-arabic-700.woff2")
+            format("woff2");
+}
+
+// Use the Persian font for right-to-left pages (e.g. the fa language)
+[dir="rtl"] {
+    font-family: Vazirmatn, Jost, sans-serif;
+}

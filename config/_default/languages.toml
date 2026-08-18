@@ -33,13 +33,10 @@
 
 [fa]
   languageName = "فارسی"
-  contentDir = "content/fa"
+  languageDirection = "rtl"
   weight = 25
   [fa.params]
     languageISO = "FA"
     languageTag = "fa-IR"
-    titleAddition = "قالب مستندات مدرن"
-    description = "Doks یک قالب Hugo است که به شما امکان می‌دهد وب‌سایت‌های مستندات مدرن بسازید که ایمن، سریع و آماده SEO هستند — به صورت پیش‌فرض."
-    titleHome = "قالب Doks"
-    footer = 'قدرت گرفته از <a href="https://www.netlify.com/">Netlify</a>، <a href="https://gohugo.io/">Hugo</a>، و <a href="https://getdoks.org/">Doks</a>'
-    alertText = 'معرفی قالب فرزند Doks، به‌روزرسانی‌های مختلف DX + UX و موارد دیگر! <a class="alert-link stretched-link" href="https://getdoks.org/blog/doks-v0.2/">مشاهده Doks v0.2</a>'
+    footer = 'ساخته شده توسط <a class="text-muted" href="https://setti.md/">Setti</a>'
+    alertText = '<a class="alert-link stretched-link fw-normal" href="/blog/example-post/">نسخه ۱.۰ Doks منتشر شد!</a>'

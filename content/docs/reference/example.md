@@ -1,5 +1,6 @@
 ---
 title: "Example Reference"
+slug: "example-reference"
 description: "Learn how to design concise, comprehensive reference pages that document concepts, options, and behavior clearly so users can quickly find exact answers."
 summary: ""
 date: 2023-09-07T16:13:18+02:00

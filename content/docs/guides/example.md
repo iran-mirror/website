@@ -1,5 +1,6 @@
 ---
 title: "Example Guide"
+slug: "example-guide"
 description: "Learn how to structure clear, task-focused guides that walk users through real workflows step by step, improving documentation usability and success."
 summary: ""
 date: 2023-09-07T16:04:48+02:00
