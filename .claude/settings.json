@@ -4,7 +4,9 @@
       "Bash(curl -s --max-time 10 -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0 Safari/537.36\" \"https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap\")",
       "Bash(hugo version *)",
       "Bash(hugo --gc)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(find /home/mequ/.claude/skills -maxdepth 2 -iname \"SKILL.md\" 2>/dev/null | head -5; echo \"---plugin skills---\"; find / -maxdepth 6 -iname \"SKILL.md\" 2>/dev/null | grep -v node_modules | head -20)",
+      "Read(//home/mequ/.claude/**)"
     ]
   }
 }
