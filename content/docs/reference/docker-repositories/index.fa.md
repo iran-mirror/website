@@ -263,7 +263,7 @@ docker pull docker.repo.mirrory.ir/library/postgres:15-alpine
 
 تصویری گم شده یافتید؟ خرابی تصویر؟ مسئله کارایی؟
 
-[یک مسئله را در GitHub باز کنید](https://github.com/iran-mirror/mirrory/issues) با:
+[یک مسئله را در GitHub باز کنید](https://github.com/iran-mirror/website/issues) با:
 - نام و برچسب تصویر
 - پیام خطا یا رفتار
 - جزئیات سیستم شما (سیستم عامل، نسخه Docker، معماری)

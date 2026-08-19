@@ -263,7 +263,7 @@ For very large images (1GB+), pulls may take longer but are still faster than in
 
 Found a missing image? Image corruption? Performance issue?
 
-[Open an issue on GitHub](https://github.com/iran-mirror/mirrory/issues) with:
+[Open an issue on GitHub](https://github.com/iran-mirror/website/issues) with:
 - Image name and tag
 - Error message or behavior
 - Your system details (OS, Docker version, architecture)
